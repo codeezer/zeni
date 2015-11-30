@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 import re, collections
 
 def words(text): 
@@ -9,7 +12,7 @@ def train(features):
         model[f] += 1
     return model
 
-NWORDS = train(words(file('words.txt').read()))
+NWORDS = train(words(open('words.txt').read()))
 
 alphabet = 'abcdefghijklmnopqrstuvwxyz'
 
