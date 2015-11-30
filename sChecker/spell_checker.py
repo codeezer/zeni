@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import re, collections
+import re,collections
 
 def words(text): 
     return re.findall('[a-z]+', text.lower()) 
