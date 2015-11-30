@@ -9,6 +9,7 @@ class color:
     COW = '\033[0;33m'
     MIW = '\033[0;91m'
 
+
 while True:
     try:
         _word = input("Enter the word >> ")
@@ -21,4 +22,3 @@ while True:
 
     except KeyboardInterrupt:
         break
-print(w_history)
