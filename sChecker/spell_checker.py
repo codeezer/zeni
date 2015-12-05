@@ -31,8 +31,11 @@ def known(words):
     return set(w for w in words if w in NWORDS)
 
 def correct(word):
-    candidates = known([word]) or known(edits1(word)) or known_edits2(word) or [word]
-    return max(candidates, key=NWORDS.get)
+    if word == ',':
+        return 'comma'
+    else:
+        candidates = known([word]) or known(edits1(word)) or known_edits2(word) or [word]
+        return max(candidates, key=NWORDS.get)
 
 if __name__ == '__correct__':
     correct()
