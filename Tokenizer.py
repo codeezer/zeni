@@ -36,6 +36,7 @@ contractions = {
     "i'd better": "i had better",
     "i'd": "i would",
     "i'll": "i will",
+    "i'm": "i am",
     "i've": "i have",
     "you'd": "you would",
     "you're": "you are",

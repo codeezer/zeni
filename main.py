@@ -21,21 +21,19 @@ while True:
             #word = spell.words(_word)
             c_word = spell.correct(_word)
             c_list.append(c_word)
-            
+
         for i in range(len(c_list)-1):
             print('\t'+color.MIW+_list[i]+color.END+' -> '+color.COW+c_list[i]+color.END)
 
-        print('')
-
 
         #if (_word == c_word):
-            #print("Correct Word : "+color.COW+c_word+color.END)
+        #    print("Correct Word : "+color.COW+c_word+color.END)
         #else:
-            #print("Did you mean : "+color.COW+c_word+color.END+" ?? instead of "+color.MIW+_word+color.END)
+        #    print("Did you mean : "+color.COW+c_word+color.END+" ?? instead of "+color.MIW+_word+color.END)
 
     except KeyboardInterrupt:
         break
 
-    except:
-        print('Unexpected Error Occured')
+    #except:
+    #    print('Unexpected Error Occured')
 
